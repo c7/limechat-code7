@@ -7,30 +7,33 @@
 
 html {
   font-family: 'Monaco';
-  font-size: 9pt;
+  font-size: 10pt;
   background-color: #000;
   color: #f0f0f0;
+  line-height: 1.4em;
 }
 body {}
 
 .url { color: #99cf50; }
 .address {}
 .highlight {
-  font-size: 160%;
   font-weight: normal;
-  padding: 0 3px;
   color: #e28964;
 }
 
 .line {}
 .line[alternate=even] {}
-.line[alternate=odd] {}
-.line[highlight=true] {}
+.line[alternate=odd] {
+  background: #050505;
+}
+.line[highlight=true] {
+  background: #111;
+}
 
 /* Handle the overload of non important messages by ignoring them */
 .line[type=join], .line[type=part], .line[type=quit] { display: none; }
 
-.time { color: #3387bc; }
+.time { color: #222; }
 .place { color: #3387bc; }
 
 .sender[type=normal] { color: #3e87e3; }
@@ -43,7 +46,7 @@ body {}
 .message[type=system], .message[type=join], .message[type=part], .message[type=kick],
 .message[type=quit], .message[type=kill], .message[type=nick], .message[type=mode],
 .message[type=topic], .message[type=invite], .message[type=wallops] {
-  color: #65b042;
+  color: #333;
 }
 .message[type=reply] { color: #509036; }
 
