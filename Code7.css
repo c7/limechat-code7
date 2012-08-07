@@ -31,8 +31,9 @@ body {}
 }
 
 /* Handle the overload of non important messages by ignoring them */
-.line[type=join], .line[type=part], .line[type=quit] { display: none; }
+.line[type=join], .line[type=part], .line[type=quit], .console .time { display: none; }
 
+.console { font-size: 8pt; }
 .time { color: #222; }
 .place { color: #3387bc; }
 
